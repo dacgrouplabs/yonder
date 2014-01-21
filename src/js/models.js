@@ -8,7 +8,7 @@ var Yonder = Yonder || {};
     sync: function(method, model, options) {
       if (method === 'read') {
         this.clear({silent: true});
-        this.geocode(options.address); 
+        this.geocode(options.address);
       } else {
         throw new Error('Method [' + method + '] is not supported. Geocoders are read-only.');
       }
@@ -53,7 +53,7 @@ var Yonder = Yonder || {};
         return normalRes;
       }
     }),
-    
+
     //Yahoo! PlaceFinder
     Y.GeocoderModel.extend({
       //Include a unique geocoder name for display
